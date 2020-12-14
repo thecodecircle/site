@@ -1,0 +1,463 @@
+---
+layout: default
+title: "הקוד השומרי"
+---
+
+
+<header class="">
+      <!--Nav-->
+
+<nav id="headerNav" class="hidden fixed w-full z-30 top-0 text-blue bg-white shadow" style="display: none;">
+
+	<div class="w-full container mx-auto flex flex-wrap items-center justify-between aamy-2 py-4">
+
+		<div class="pl-4 flex items-center">
+			<!-- <a class="toggleColour text-whitea no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> -->
+				<!--Icon from: http://www.potlabicons.com/ -->
+				<!-- <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005"> -->
+				<!-- <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" fill="rgb(0,0,0)" /> -->
+				<!-- <path class="plane-take-off" d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "/> -->
+      <!-- </svg>  -->
+      <!-- הקוד השומרי
+			</a> -->
+      <a id="nav-logo" class="toggleColour text-whitea no-underline hover:no-underline font-bold px-4 text-2xl lg:text-4xl" href="/"><img class="h-8" src="/assets/img/logo.svg"></a>
+		</div>
+
+		<div class="block lg:hidden pr-4">
+			<button id="nav-toggle" class="flex items-center p-1 text-orange-800 hover:text-gray-900">
+				<svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>תפריט</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+			</button>
+		</div>
+
+		<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-blacka p-4 lg:p-0 z-20" id="nav-content">
+			<ul class="list-reset lg:flex justify-end flex-1 items-center">
+				<li class="mr-3">
+          <a class="inline-block text-blacka no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#posts">הבלוג השומרי</a>
+					<!-- <a class="inline-block py-2 px-4 text-blacka font-bold no-underline" href="#">Active</a> -->
+				</li>
+				<!-- <li class="mr-3">
+          <a class="inline-block text-blacka no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/our-story">הסיפור שלנו</a>
+					<a class="inline-block text-blacka no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
+				</li> -->
+				<li class="mr-3">
+
+					<!-- <a class="inline-block text-blacka no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a> -->
+				</li>
+        <li class="mr-3">
+          <a class="about inline-block text-blacka no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#about">מי אנחנו</a>
+        </li>
+        <li class="mr-3">
+          <a class="speaks inline-block text-blacka no-underline hover:text-gray-800 hover:text-underline py-2 px-4 mb-4 lg:mb-0" href="#speaks">פרויקטים</a>
+        </li>
+    </ul>
+    <a id="navAction" class="gradient contact mx-auto lg:mx-0 hover:underline bg-white text-white font-bold rounded-full my-6 lg:my-0 py-3 px-8 shadow opacity-75" href="/#contact">דברו איתנו</a>
+			<!-- <button id="navAction" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75">Action</button> -->
+		</div>
+	</div>
+		<div id="progress" class="hidden" style="--scroll:0%;"></div>
+
+
+	<!-- <hr class="border-b border-gray-100 opacity-25 my-0 py-0" /> -->
+</nav>
+
+
+
+<script type="text/javascript">
+
+	if ($(window).scrollTop() > 100) {
+		$("#headerNav").show(1);
+		$(".scrollToTop").show(1)
+	}
+
+var scrollUp = 0
+$(window).scroll(function (event) {
+	if ($(window).scrollTop() > 100) {
+		if ($("#headerNav").css("display") == "none") {
+			scrollUp = 0
+			$("#headerNav").show("blind", 400);
+			$(".scrollToTop").show(400)
+		}
+	}
+	else {
+		if ($("#headerNav").css("display") != "none" && scrollUp == 0) {
+			// $(window).off('scroll');
+			$("#headerNav").hide("blind", 400)
+			$(".scrollToTop").hide(400)
+			scrollUp = 1
+		}
+	}
+})
+
+
+</script>
+
+    </header>
+
+<main class="">
+
+
+
+<div class="text-blue">
+
+  <!-- אנחנו מאמינים -->
+  <div class="leading-normal tracking-normal text-white gradient">
+    <!--Hero-->
+    <div id="hero" class="md:pt-16 md:h-auto h-screen" style="height: 968.625px;">
+
+    	<div class="container md:h-auto h-full px-10 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+    		<!--Right Col-->
+    		<div class="flex flex-1 flex-col w-full md:w-2/5 justify-center  md:items-start text-center md:text-right">
+          <div class="mb-1">
+            <img class="mb-2 md:h-8 h-5" src="/assets/img/very-white-logo.svg">
+            <h1 class="w-full md:h-auto ah-1/3 text-3xl md:text-5xl font-bold text-right tracking-wide">כשחינוך וטכנולוגיה נפגשים</h1>
+          </div>
+    			<!-- <h1 class="my-4 text-5xl font-bold leading-tight">הקוד השומרי</h1> -->
+    			<div class="modal-open text-right text-md leading-normal mt-4 md:h-auto ah-1/3" id="modal-open1"><div class="trix-content">
+  <div>אנחנו מאמינים שאנחנו יכולים לשנות את העולם. בגלל זה החלטנו ליצור אפליקציות שישחררו אתכם להתעסק במה שחשוב באמת - חינוך</div>
+</div>
+</div>
+
+    			<button id="hero-contact" type="button" name="button" class="contact mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 py-4 px-8 shadow-lg">דברו איתנו</button>
+    		</div>
+    		<!--left Col-->
+          <!-- true -->
+          <div class="w-full md:w-3/5 pb-2 text-center">
+            <img class="w-full md:w-4/5 z-50 float-left" src="/assets/img/hero.svg">
+          </div>
+
+    	</div>
+
+    </div>
+
+
+    <div id="svg" class="relative -mt-12 lg:-mt-24">
+    	<svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    	<g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+    	<path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+    	<path d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z" opacity="0.100000001"></path>
+    	<path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+    	</g>
+    	<g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+    	<path d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"></path>
+    	</g>
+    	</g>
+    	</svg>
+    </div>
+
+  </div>
+
+
+  <div class="text-gradient">
+
+
+  <!-- מי אנחנו -->
+  <div class="flex w-full h-32 bg-white " id="about">
+  	<div class="modal-open w-full self-center" id="modal-open2">
+  	<h1 class="text-5xl text-center">
+  		<div class="trix-content">
+  מי אנחנו
+</div>
+
+  	</h1>
+  	</div>
+  </div>
+
+  <div id="svg" class="relative mb-8 rotate180 lg:-mb-10">
+  	<svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+  	<g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+  	<path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+  	<path d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z" opacity="0.100000001"></path>
+  	<path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+  	</g>
+  	<g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+  	<path d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"></path>
+  	</g>
+  	</g>
+  	</svg>
+  </div>
+
+  <div class="content-div md:mx-32">
+
+  <!-- אנחנו אנשי חינוך -->
+  <div class="lg:flex w-full">
+    <div class="lg:flex-shrink-0 lg:w-1/2">
+      <img class="md:rounded-lg shadow-2xl  lg:h-full w-full object-cover" src="/assets/img/hands.webp">
+    </div>
+  <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
+        <div class="modal-open md:w-full bg-transparent border-white border-4  text-white flex items-center w-3/4 h-2/3 shadow-2xl rounded-lg p-5" id="modal-open3">
+        <div class="p-text text-right ">
+  <div>אנחנו ירדן שפנר וגיא נתן, מתכנתים מתנועת הבוגרים של השומר הצעיר.<br>מתוך הרצון לשנות את העולם לטובה ומתוך נסיון חינוכי עשיר, אנחנו רוצים לתת מענה טכנולוגי חדשני לבעיות עולם החינוך</div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- העבודה שלנו -->
+  <div class="lg:flex  w-full ">
+    <div class="lg:w-1/2 self-center">
+      <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
+        <div class="modal-open border-white border-4  text-white flex items-center w-full h-2/3 shadow-2xl rounded-lg p-5" id="modal-open4">
+        <div class="p-text text-right">
+  <div>אנחנו אנשי שטח, שמכירים ומבינים את חייו של המחנך הפורמלי והבלתי פורמלי. לא יצאנו מיחידות מחשבים מיוחדות, אלא התמקצענו דרך עבודה קשה של פיתוח כלי עזר לחינוך שלנו.</div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:flex-shrink-0 lg:w-1/2">
+      <img class="rounded-lg shadow-2xl h-full w-full object-cover" src="/assets/img/field.webp">
+    </div>
+  </div>
+
+  </div>
+  <div id="svg" class="relative -mt-10 lg:-mt-10">
+  	<svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+  			<g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+  				<path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+  				<path d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z" opacity="0.100000001"></path>
+  				<path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+  			</g>
+  			<g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+  				<path d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"></path>
+  			</g>
+  		</g>
+  	</svg>
+  </div>
+  </div>
+
+  <!-- העבודה שלנו מדברת -->
+  <div id="speaks" class="flex w-full h-32 bg-white">
+    <div class="modal-open w-full self-center" id="modal-open5">
+      <h1 class="text-5xl text-center">
+        <div class="trix-content">
+  <div>העבודה מדברת בעד עצמה</div>
+</div>
+
+      </h1>
+    </div>
+  </div>
+  <div class="text-gradient">
+
+
+  <div id="svg" class="relative mb-8 rotate180 lg:-mb-10">
+  	<svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+  			<g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+  				<path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+  				<path d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z" opacity="0.100000001"></path>
+  				<path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+  			</g>
+  			<g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+  				<path d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"></path>
+  			</g>
+  		</g>
+  	</svg>
+  </div>
+
+  <div class="content-div md:mx-32">
+
+  <!-- אנחנו אנשי חינוך -->
+  <div class="lg:flex w-full">
+    <div class="lg:flex-shrink-0 lg:w-1/2">
+  		<img class="md:rounded-lg shadow-2xl  lg:h-full w-full object-cover" src="/assets/img/meeting.webp">
+    </div>
+  <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
+        <div class="modal-open md:w-full border-white border-4  text-white flex items-center w-3/4 h-2/3 shadow-2xl rounded-lg p-5" id="modal-open6">
+        <div class="p-text text-right ">
+  <div>הרמנו מגוון פרויקטים שקשורים לחינוך: <strong>המטה</strong> - אפליקציה לניהול כוח אדם ומעקב אחרי נוכחות, <strong>מרכז הדרכה&nbsp;</strong>- ארגון תוכן חינוכי בצורה נגישה עבור מדריכים צעירים,&nbsp;<strong>אתרי תדמית</strong>,&nbsp;<strong>ממשק יצירת תעודות אלטרנטיביות</strong>&nbsp;- מותאם לפדגוגיה של בתי ספר שנותנים הערכה אישית, ועוד...</div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- העבודה שלנו -->
+  <div class="lg:flex  w-full ">
+    <div class="lg:flex-shrink-0 lg:w-1/2 block md:hidden">
+  		<img class="rounded-lg shadow-2xl h-full w-full object-cover" src="/assets/img/mate_mobile.jpg">
+    </div>
+    <div class="lg:w-1/2 self-center">
+      <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
+        <div class="modal-open md:w-full border-white border-4  text-white flex items-center w-3/4 h-2/3 shadow-2xl rounded-lg p-5" id="modal-open7">
+        <div class="p-text text-right">
+  <div>"<strong>המטה</strong> קיצר תהליכים - הוריד את זמן ההמתנה לעדכון נוכחות בחצי, שיפר את היכולת להפיק מידע קריטי בשניות, והפך את המידע להרבה יותר חסוי ופרטי. פינה את הצוות להתעסק בחניכים עצמם" - קטיה נובק וגלעד מנטל, תנועת השומר הצעיר</div>
+
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:flex-shrink-0 lg:w-1/2 hidden md:block">
+  		<img class="rounded-lg shadow-2xl h-full w-full object-cover" src="/assets/img/mate_desk.jpg">
+    </div>
+  </div>
+
+
+  <!-- פרוייקטים -->
+  <div id="projects" class="modal-open w-full mb-8">
+  <!-- <h1 class="text-4xl text-center" id="projects">
+    <div class="trix-content">
+  הפרויקטים המהממים שלנו
+</div>
+
+  </h1> -->
+  </div>
+
+  <!-- <div class="grid max-w-6xl mx-auto p-8">
+
+    <div class="border-white border-4  text-white rounded h-full text-grey-darkest no-underline shadow-md">
+      <h1 class="text-3xl p-6">מטווח מפורסמים</h1>
+      <img border="0" alt="מטווח מפורסמים" class="w-full block rounded-b" src="/assets/img/c_range-4e9b795de18d6c5d73b0522e0fb4465b166b3192b20e107fc701642fafadf614.webp" />
+    </div>
+
+
+    <div class="border-white border-4  text-white rounded h-full text-grey-darkest no-underline shadow-md">
+      <h1 class="text-3xl p-6">קבלשומט</h1>
+    <img border="0" alt="קבלשומט" class="w-full block rounded-b" src="/assets/img/kablash-4ee75bb52e00c5b49e935f7ba0eb5403134d0d34bc2fbfdb11710ecac82b17a2.webp" />
+    </div>
+
+    <div class="border-white border-4  text-white rounded h-full text-grey-darkest no-underline shadow-md">
+      <h1 class="text-3xl p-6">קבלשומט</h1>
+    <img border="0" alt="קבלשומט" class="w-full block rounded-b" src="/assets/img/kablash2-f9038fd4501a766f5910ddc98a0afc86bfdd36124f92ea9ae23faa830c005451.webp" />
+    </div>
+
+    <div class="border-white border-4  text-white rounded h-full text-grey-darkest no-underline shadow-md">
+      <h1 class="text-3xl p-6">המטה - מחשב</h1>
+    <img border="0" alt="המטה - מחשב" class="w-full block rounded-b" src="/assets/img/mate_desk-be130ccaf762a7efbad717bf0fe7387a38459fef9b173314fd6fa2a09f7775c5.jpg" />
+    </div>
+
+    <div class="border-white border-4  text-white rounded h-full text-grey-darkest no-underline shadow-md">
+      <h1 class="text-3xl p-6">המטה - טלפון</h1>
+    <img border="0" alt="המטה - טלפון" class="w-full block rounded-b" src="/assets/img/mate_mobile-647bc87fd01d4f04d9c3f6174dce0afd7a336ac3e06632dfda6a489aafc0d220.webp" />
+    </div>
+
+    <div class="border-white border-4  text-white rounded h-full text-grey-darkest no-underline shadow-md">
+      <h1 class="text-3xl p-6">הספרייה השיתופית</h1>
+    <img border="0" alt="הספרייה השיתופית" class="w-full block rounded-b" src="/assets/img/share_lib-97ef4963acfc0ebf9e7e05da9a7904243ccdada5ae811b181c3421e6af87dd6c.webp" />
+    </div>
+
+
+  </div> -->
+
+  </div>
+
+    <div id="svg" class="relative -mt-12 lg:-mt-24">
+    	<svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    	<g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+    	<path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+    	<path d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z" opacity="0.100000001"></path>
+    	<path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+    	</g>
+    	<g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+    	<path d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"></path>
+    	</g>
+    	</g>
+    	</svg>
+    </div>
+  </div>
+  <!-- יצירת קשר -->
+  <div class="text-gradient w-full pb-12" id="contact">
+  	<div class="modal-open w-full bg-white" id="modal-open9">
+  	<h1 class="text-5xl text-center">
+  		<div class="trix-content">
+  דברו איתנו
+</div>
+
+  	</h1>
+  	</div>
+  	<div id="svg" class="relative rotate180 mb-4 lg:-mb-2">
+  		<svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+  				<g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+  					<path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+  					<path d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z" opacity="0.100000001"></path>
+  					<path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+  				</g>
+  				<g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+  					<path d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"></path>
+  				</g>
+  			</g>
+  		</svg>
+  	</div>
+
+
+  <div class="md:mx-32">
+
+  	<div class="col-1 md:col-2 flex flex-col items-center w-full ">
+  		<div class="md:mb-0 mb-10 contact-form bg-white shadow-2xl m-auto min-width-300 w-4/5 md:w-2/3 rounded-lg p-16">
+  			<div id="after-submit" class="hidden text-white text-2xl border-2 w-full m border-white rounded-lg p-6">
+  				קיבלנו את ההודעה,
+  				נדבר בקרוב!
+  			</div>
+  		<form class="simple_form new_quiz" id="newquiz" novalidate="novalidate" action="/quizzes" accept-charset="UTF-8" data-remote="true" method="post">
+
+  <h1 class="font-bold text-xl mb-2 h-full"></h1>
+    <div class="mb-5">
+      <input placeholder="מה שמך?" class="block contact-input" required="required" type="text" name="quiz[full_name]" id="quiz_full_name">
+    </div>
+
+    <div class="mb-5">
+      <input placeholder="מה הטלפון שלך?" class="block contact-input" type="tel" name="quiz[phone]" id="quiz_phone">
+    </div>
+
+    <div class="mb-5">
+      <input placeholder="example@gmail.com" class="block contact-input" required="required" type="email" name="quiz[email]" id="quiz_email">
+    </div>
+
+    <div class="mb-5">
+      <input placeholder="מה תרצה/י לומר לנו?" class="block contact-input" type="text" name="quiz[notes]" id="quiz_notes">
+    </div>
+
+    <div class="form-actions">
+      <input type="submit" name="commit" value="שליחה" class="btn bb" data-disable-with="שליחה">
+    </div>
+</form></div>
+
+  		<!-- פרטי קשר -->
+  		<div class="text-2xl text-center shadow-2xl rounded-lg mx-32 bg-white p-6">
+        <div class="">
+          <a href="mailto:codecircle13@gmail.com">codecircle13@gmail.com</a>
+        </div>
+  			<div class="flex justify-center mt-4">
+  				<a href="https://www.facebook.com/%D7%94%D7%A7%D7%95%D7%93-%D7%94%D7%A9%D7%95%D7%9E%D7%A8%D7%99-109072317196522">
+  				      <img class="h-12" src="/assets/img/facebook_circle.png">
+          </a>
+          <a href="https://www.instagram.com/code_circle/">
+            				<img class="h-12 mr-5" src="/assets/img/Instagram_logo.svg.webp">
+          </a>  			</div>
+  		</div>
+  	</div>
+  </div>
+    </div>
+  </div>
+
+
+
+
+
+    <img class="scrollToTop hidden fixed bottom-0 pb-1 pr-1 md:pr-2 md:pb-2 md:h-12 md:w-12 h-10 w-10" src="/assets/img/scroll2.svg" width="50" height="50" style="display: none;">
+    </main>
+    <script>
+    $( document ).ready(function() {
+      var svgHeight = $("#svg").outerHeight(true);
+      var viewHeight = $( window ).height();
+      $("#hero").height(viewHeight - svgHeight)
+
+    });
+
+    $(".scrollToTop").click(function() {
+      console.log("scroll to top");
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+    });
+
+
+
+    </script>
