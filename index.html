@@ -7,7 +7,7 @@ title: "הקוד השומרי"
 <header class="">
       <!--Nav-->
 
-<nav id="headerNav" class="hidden fixed w-full z-30 top-0 text-blue bg-white shadow" style="display: none;">
+<nav id="headerNav" class="hidden fixed w-full z-30 top-0 left-0 text-blue bg-white shadow" style="display: none;">
 
 	<div class="w-full container mx-auto flex flex-wrap items-center justify-between aamy-2 py-4">
 
@@ -32,14 +32,6 @@ title: "הקוד השומרי"
 		<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-blacka p-4 lg:p-0 z-20" id="nav-content">
 			<ul class="list-reset lg:flex justify-end flex-1 items-center">
 				<li class="mr-3">
-          <a class="inline-block text-blacka no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#posts">הבלוג השומרי</a>
-					<!-- <a class="inline-block py-2 px-4 text-blacka font-bold no-underline" href="#">Active</a> -->
-				</li>
-				<!-- <li class="mr-3">
-          <a class="inline-block text-blacka no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/our-story">הסיפור שלנו</a>
-					<a class="inline-block text-blacka no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
-				</li> -->
-				<li class="mr-3">
 
 					<!-- <a class="inline-block text-blacka no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a> -->
 				</li>
@@ -54,7 +46,6 @@ title: "הקוד השומרי"
 			<!-- <button id="navAction" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75">Action</button> -->
 		</div>
 	</div>
-		<div id="progress" class="hidden" style="--scroll:0%;"></div>
 
 
 	<!-- <hr class="border-b border-gray-100 opacity-25 my-0 py-0" /> -->
@@ -93,7 +84,7 @@ $(window).scroll(function (event) {
 
     </header>
 
-<main class="">
+<main id="main" class="">
 
 
 
@@ -117,11 +108,11 @@ $(window).scroll(function (event) {
 </div>
 </div>
 
-    			<button id="hero-contact" type="button" name="button" class="contact mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 py-4 px-8 shadow-lg">דברו איתנו</button>
+    			<a id="hero-contact" href="#contact" class="contact mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 py-4 px-8 shadow-lg">דברו איתנו</a>
     		</div>
     		<!--left Col-->
           <!-- true -->
-          <div class="w-full md:w-3/5 pb-2 text-center">
+          <div class="w-full md:w-3/5 pb-2 text-center hidden md:block">
             <img class="w-full md:w-4/5 z-50 float-left" src="/assets/img/hero.svg">
           </div>
 
@@ -186,8 +177,8 @@ $(window).scroll(function (event) {
       <img class="md:rounded-lg shadow-2xl  lg:h-full w-full object-cover" src="/assets/img/hands.webp">
     </div>
   <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
-        <div class="modal-open md:w-full bg-transparent border-white border-4  text-white flex items-center w-3/4 h-2/3 shadow-2xl rounded-lg p-5" id="modal-open3">
-        <div class="p-text text-right ">
+        <div class="modal-open md:w-full bg-transparent border-white border-4  text-white flex items-center w-3/4 shadow-2xl rounded-lg p-5" id="modal-open3">
+        <div class="text-lg md:text-xl lg:text-2xl leading-big infos text-right ">
   <div>אנחנו ירדן שפנר וגיא נתן, מתכנתים מתנועת הבוגרים של השומר הצעיר.<br>מתוך הרצון לשנות את העולם לטובה ומתוך נסיון חינוכי עשיר, אנחנו רוצים לתת מענה טכנולוגי חדשני לבעיות עולם החינוך</div>
 
         </div>
@@ -200,8 +191,8 @@ $(window).scroll(function (event) {
   <div class="lg:flex  w-full ">
     <div class="lg:w-1/2 self-center">
       <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
-        <div class="modal-open border-white border-4  text-white flex items-center w-full h-2/3 shadow-2xl rounded-lg p-5" id="modal-open4">
-        <div class="p-text text-right">
+        <div class="modal-open md:w-full bg-transparent border-white border-4  text-white flex items-center w-3/4 shadow-2xl rounded-lg p-5" id="modal-open4">
+        <div class="text-lg md:text-xl lg:text-2xl leading-big infos text-right">
   <div>אנחנו אנשי שטח, שמכירים ומבינים את חייו של המחנך הפורמלי והבלתי פורמלי. לא יצאנו מיחידות מחשבים מיוחדות, אלא התמקצענו דרך עבודה קשה של פיתוח כלי עזר לחינוך שלנו.</div>
 
         </div>
@@ -267,8 +258,8 @@ $(window).scroll(function (event) {
   		<img class="md:rounded-lg shadow-2xl  lg:h-full w-full object-cover" src="/assets/img/meeting.webp">
     </div>
   <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
-        <div class="modal-open md:w-full border-white border-4  text-white flex items-center w-3/4 h-2/3 shadow-2xl rounded-lg p-5" id="modal-open6">
-        <div class="p-text text-right ">
+        <div class="modal-open md:w-full border-white border-4  text-white flex items-center w-3/4 shadow-2xl rounded-lg p-5" id="modal-open6">
+        <div class="text-lg md:text-xl lg:text-2xl leading-big infos text-right ">
   <div>הרמנו מגוון פרויקטים שקשורים לחינוך: <strong>המטה</strong> - אפליקציה לניהול כוח אדם ומעקב אחרי נוכחות, <strong>מרכז הדרכה&nbsp;</strong>- ארגון תוכן חינוכי בצורה נגישה עבור מדריכים צעירים,&nbsp;<strong>אתרי תדמית</strong>,&nbsp;<strong>ממשק יצירת תעודות אלטרנטיביות</strong>&nbsp;- מותאם לפדגוגיה של בתי ספר שנותנים הערכה אישית, ועוד...</div>
 
         </div>
@@ -284,8 +275,8 @@ $(window).scroll(function (event) {
     </div>
     <div class="lg:w-1/2 self-center">
       <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
-        <div class="modal-open md:w-full border-white border-4  text-white flex items-center w-3/4 h-2/3 shadow-2xl rounded-lg p-5" id="modal-open7">
-        <div class="p-text text-right">
+        <div class="modal-open md:w-full border-white border-4  text-white flex items-center w-3/4 shadow-2xl rounded-lg p-5" id="modal-open7">
+        <div class="text-lg md:text-xl lg:text-2xl leading-big infos text-right">
   <div>"<strong>המטה</strong> קיצר תהליכים - הוריד את זמן ההמתנה לעדכון נוכחות בחצי, שיפר את היכולת להפיק מידע קריטי בשניות, והפך את המידע להרבה יותר חסוי ופרטי. פינה את הצוות להתעסק בחניכים עצמם" - קטיה נובק וגלעד מנטל, תנועת השומר הצעיר</div>
 
 
@@ -390,29 +381,41 @@ $(window).scroll(function (event) {
 
   <div class="md:mx-32">
 
-  	<div class="col-1 md:col-2 flex flex-col items-center w-full ">
+  	<div class="lg:grid col-1 md:col-2 flex flex-col items-center w-full ">
   		<div class="md:mb-0 mb-10 contact-form bg-white shadow-2xl m-auto min-width-300 w-4/5 md:w-2/3 rounded-lg p-16">
   			<div id="after-submit" class="hidden text-white text-2xl border-2 w-full m border-white rounded-lg p-6">
   				קיבלנו את ההודעה,
   				נדבר בקרוב!
   			</div>
-  		<form class="simple_form new_quiz" id="newquiz" novalidate="novalidate" action="/quizzes" accept-charset="UTF-8" data-remote="true" method="post">
+				<script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+onload="if(submitted) {alert('yes')}"></iframe>
+  		<form class="simple_form new_quiz"
+						id="form"
+						action="https://docs.google.com/forms/d/e/1FAIpQLSevChCS7dHyNKmsAblpmgUS8EgpiGElU-AeO68oFmfKIBv9-Q/formResponse"
+						target="hidden_iframe"
+						onsubmit="submitted=true;"
+						method="post">
 
   <h1 class="font-bold text-xl mb-2 h-full"></h1>
     <div class="mb-5">
-      <input placeholder="מה שמך?" class="block contact-input" required="required" type="text" name="quiz[full_name]" id="quiz_full_name">
+      <input placeholder="מה שמך?" class="block contact-input" required="required" type="text" name="entry.877023693" id="quiz_full_name">
+			<label for="">שם</label>
     </div>
 
     <div class="mb-5">
-      <input placeholder="מה הטלפון שלך?" class="block contact-input" type="tel" name="quiz[phone]" id="quiz_phone">
+      <input placeholder="מה הטלפון שלך?" class="block contact-input" type="tel" name="entry.1109802569" id="quiz_phone">
+			<label for="">טלפון</label>
     </div>
 
     <div class="mb-5">
-      <input placeholder="example@gmail.com" class="block contact-input" required="required" type="email" name="quiz[email]" id="quiz_email">
+      <input placeholder="מה המייל שלך?" class="block contact-input" required="required" type="email" name="entry.2031525116" id="quiz_email">
+			<label for="">מייל</label>
     </div>
 
     <div class="mb-5">
-      <input placeholder="מה תרצה/י לומר לנו?" class="block contact-input" type="text" name="quiz[notes]" id="quiz_notes">
+      <input placeholder="מה תרצה/י לומר לנו?" class="block contact-input" type="text" name="entry.102170778" id="quiz_notes">
+			<label for="">הודעה</label>
     </div>
 
     <div class="form-actions">
@@ -441,8 +444,9 @@ $(window).scroll(function (event) {
 
 
 
-
-    <img class="scrollToTop hidden fixed bottom-0 pb-1 pr-1 md:pr-2 md:pb-2 md:h-12 md:w-12 h-10 w-10" src="/assets/img/scroll2.svg" width="50" height="50" style="display: none;">
+<a href="#main">
+	<img class="scrollToTop hidden fixed bottom-0 pb-1 pr-1 md:pr-2 md:pb-2 md:h-12 md:w-12 h-10 w-10" src="/assets/img/scroll2.svg" width="50" height="50" style="display: none;">
+</a>
     </main>
     <script>
     $( document ).ready(function() {
@@ -451,13 +455,6 @@ $(window).scroll(function (event) {
       $("#hero").height(viewHeight - svgHeight)
 
     });
-
-    $(".scrollToTop").click(function() {
-      console.log("scroll to top");
-      $("html, body").animate({ scrollTop: 0 }, "slow");
-      return false;
-    });
-
 
 
     </script>

@@ -1,12 +1,9 @@
 ---
 ---
-
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
-
+//
+// @import "tailwindcss/base";
+// @import "tailwindcss/components";
+// @import "tailwindcss/utilities";
 @import "main";
 
 
@@ -217,8 +214,22 @@ input.error{
 }
 
 
+.leading-big{
+  line-height: 2 !important;
+}
 
-@responsive {
+.infos{
+  min-height: 60%;
+}
+label{
+  opacity: 0;
+  position: absolute;
+  top: -10%;
+  transition: opacity 200ms;
+}
+input:focus + label, input:invalid + label {
+  opacity: 1;
+}
 	.gradient{
 		background: rgb(0,138,125);
 		background: linear-gradient(45deg, rgba(0,138,125,1) 0%, rgba(2,87,182,1) 13%, rgba(23,0,156,1) 66%, rgba(40,0,126,1) 94%);
@@ -252,19 +263,11 @@ input.error{
 		width: 50vw;
 	}
   .col-1 {
-    display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1.5rem;
   }
 
   .col-2 {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
   }
-
-
-
-
-
-}
