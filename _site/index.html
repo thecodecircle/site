@@ -108,7 +108,7 @@ $(window).scroll(function (event) {
   <!-- אנחנו מאמינים -->
   <div class="leading-normal tracking-normal text-white gradient">
     <!--Hero-->
-    <div id="hero" class="md:pt-16 md:h-auto h-screen" style="height: 968.625px;">
+    <div id="hero" class="md:pt-16 md:h-auto h-screen flex items-center" style="height: 968.625px;">
 
     	<div class="container md:h-auto h-full px-10 mx-auto flex flex-wrap flex-col md:flex-row items-center">
     		<!--Right Col-->
@@ -403,7 +403,7 @@ $(window).scroll(function (event) {
   			</div>
 				<script type="text/javascript">var submitted=false;</script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-onload="if(submitted) {alert('yes')}"></iframe>
+onload="if(submitted) {alert('קיבלנו את ההודעה שלך! נחזור אליך')}"></iframe>
   		<form class="simple_form new_quiz"
 						id="form"
 						action="https://docs.google.com/forms/d/e/1FAIpQLSevChCS7dHyNKmsAblpmgUS8EgpiGElU-AeO68oFmfKIBv9-Q/formResponse"
@@ -412,23 +412,24 @@ onload="if(submitted) {alert('yes')}"></iframe>
 						method="post">
 
   <h1 class="font-bold text-xl mb-2 h-full"></h1>
-    <div class="mb-5">
-      <input placeholder="מה שמך?" class="block contact-input" required="required" type="text" name="entry.877023693" id="quiz_full_name">
+    <div class="mb-5 relative">
+      <input placeholder="מה שמך?" class="block contact-input" required="required" type="text" name="entry.877023693">
 			<label for="">שם</label>
     </div>
 
-    <div class="mb-5">
-      <input placeholder="מה הטלפון שלך?" class="block contact-input" type="tel" name="entry.1109802569" id="quiz_phone">
+    <div class="mb-5 relative">
+      <input placeholder="מה הטלפון שלך?" class="block contact-input" type="tel" pattern="\d*"  title="חייב להיות מספר"  name="entry.1109802569">
 			<label for="">טלפון</label>
     </div>
 
-    <div class="mb-5">
-      <input placeholder="מה המייל שלך?" class="block contact-input" required="required" type="email" name="entry.2031525116" id="quiz_email">
+    <div class="mb-5 relative">
+      <input placeholder="מה המייל שלך?" class="block contact-input" required="required" type="email"  name="entry.2031525116">
 			<label for="">מייל</label>
+			<span class="hidden text-red-600">שדה חובה</span>
     </div>
 
-    <div class="mb-5">
-      <input placeholder="מה תרצה/י לומר לנו?" class="block contact-input" type="text" name="entry.102170778" id="quiz_notes">
+    <div class="mb-5 relative">
+      <textarea placeholder="מה תרצה/י לומר לנו?" class="block contact-input subject"  name="entry.102170778"></textarea>
 			<label for="">הודעה</label>
     </div>
 
@@ -467,8 +468,9 @@ onload="if(submitted) {alert('yes')}"></iframe>
       var svgHeight = $("#svg").outerHeight(true);
       var viewHeight = $( window ).height();
       $("#hero").height(viewHeight - svgHeight)
-
     });
+
+
 
 
     </script>

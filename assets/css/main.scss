@@ -227,7 +227,8 @@ label{
   top: -10%;
   transition: opacity 200ms;
 }
-input:focus + label, input:invalid + label {
+input:focus + label,
+textarea:focus + label{
   opacity: 1;
 }
 	.gradient{
@@ -271,3 +272,7 @@ input:focus + label, input:invalid + label {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
   }
+	.subject{
+		height: 100px;
+		// vertical-align: top;
+	}
