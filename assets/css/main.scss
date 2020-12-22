@@ -7,6 +7,11 @@
 @import "main";
 
 
+@mixin desktop {
+  @media only screen and (min-width: 1280 * 1px) {
+    @content;
+  }
+}
 
 
 
@@ -275,4 +280,11 @@ textarea:focus + label{
 	.subject{
 		height: 100px;
 		// vertical-align: top;
+	}
+
+	.hero-height{
+			height: 100vh;
+			@include desktop {
+		    height: 90vh;
+		  }
 	}

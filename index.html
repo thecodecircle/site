@@ -93,7 +93,7 @@ $(window).scroll(function (event) {
   <!-- אנחנו מאמינים -->
   <div class="leading-normal tracking-normal text-white gradient">
     <!--Hero-->
-    <div id="hero" class="md:pt-16 md:h-auto h-screen flex items-center" style="height: 968.625px;">
+    <div id="hero" class="md:pt-16 md:h-autoa hero-height ah-screen flex items-center">
 
     	<div class="container md:h-auto h-full px-10 mx-auto flex flex-wrap flex-col md:flex-row items-center">
     		<!--Right Col-->
@@ -448,14 +448,3 @@ onload="if(submitted) {alert('קיבלנו את ההודעה שלך! נחזור 
 	<img class="scrollToTop hidden fixed bottom-0 pb-1 pr-1 md:pr-2 md:pb-2 md:h-12 md:w-12 h-10 w-10" src="/assets/img/scroll2.svg" width="50" height="50" style="display: none;">
 </a>
     </main>
-    <script>
-    $( document ).ready(function() {
-      var svgHeight = $("#svg").outerHeight(true);
-      var viewHeight = $( window ).height();
-      $("#hero").height(viewHeight - svgHeight)
-    });
-
-
-
-
-    </script>
