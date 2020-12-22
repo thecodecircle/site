@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="/assets/css/main.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" charset="utf-8"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" charset="utf-8"></script> -->
     <!-- <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script> -->
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
     <header class="">
       <!--Nav-->
 
-<nav id="headerNav" class="hidden fixed w-full z-30 top-0 left-0 text-blue bg-white shadow" style="display: none;">
+<nav id="headerNav" class="  fixed w-full z-30 top-0 left-0 text-blue bg-white shadow" >
 
 	<div class="w-full container mx-auto flex flex-wrap items-center justify-between aamy-2 py-4">
 
@@ -51,12 +51,12 @@
 		</div>
 
 		<div class="block lg:hidden pr-4">
-			<button id="nav-toggle" class="flex items-center p-1 text-orange-800 hover:text-gray-900">
+			<button id="menu-btn" class="flex items-center p-1 text-orange-800 hover:text-gray-900">
 				<svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>תפריט</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
 			</button>
 		</div>
 
-		<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-blacka p-4 lg:p-0 z-20" id="nav-content">
+		<div id="menu" class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-blacka p-4 lg:p-0 z-20" id="nav-content">
 			<ul class="list-reset lg:flex justify-end flex-1 items-center">
 				<li class="mr-3">
 
@@ -80,34 +80,6 @@
 
 
 
-<script type="text/javascript">
-
-	if ($(window).scrollTop() > 100) {
-		$("#headerNav").show(1);
-		$(".scrollToTop").show(1)
-	}
-
-var scrollUp = 0
-$(window).scroll(function (event) {
-	if ($(window).scrollTop() > 100) {
-		if ($("#headerNav").css("display") == "none") {
-			scrollUp = 0
-			$("#headerNav").show("blind", 400);
-			$(".scrollToTop").show(400)
-		}
-	}
-	else {
-		if ($("#headerNav").css("display") != "none" && scrollUp == 0) {
-			// $(window).off('scroll');
-			$("#headerNav").hide("blind", 400)
-			$(".scrollToTop").hide(400)
-			scrollUp = 1
-		}
-	}
-})
-
-
-</script>
 
     </header>
 
@@ -472,9 +444,39 @@ onload="if(submitted) {alert('קיבלנו את ההודעה שלך! נחזור 
 
 
 <a href="#main">
-	<img class="scrollToTop hidden fixed bottom-0 pb-1 pr-1 md:pr-2 md:pb-2 md:h-12 md:w-12 h-10 w-10" src="/assets/img/scroll2.svg" width="50" height="50" style="display: none;">
+	<img id="scrollToTop" class="  fixed bottom-0 pb-1 pr-1 md:pr-2 md:pb-2 md:h-12 md:w-12 h-10 w-10" src="/assets/img/scroll2.svg" width="50" height="50">
 </a>
     </main>
+
+<script type="text/javascript">
+	const header = document.querySelector("#headerNav")
+	const scroll_top = document.querySelector("#scrollToTop")
+	const menu_btn = document.querySelector("#menu-btn")
+	const menu = document.querySelector("#menu")
+	if (window.scrollY > 100) {
+		header.classList.add("show")
+		scroll_top.classList.add("show")
+	}
+	else{
+		header.classList.remove("show")
+		scroll_top.classList.remove("show")
+	}
+	document.addEventListener("scroll", () => {
+		if (window.scrollY > 100) {
+			header.classList.add("show")
+			scroll_top.classList.add("show")
+		}
+		else{
+			header.classList.remove("show")
+			scroll_top.classList.remove("show")
+		}
+	});
+
+	menu_btn.addEventListener("click", () => {
+		menu.classList.toggle('hidden')
+	})
+
+</script>
 
   </body>
 </html>

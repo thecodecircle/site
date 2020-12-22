@@ -288,3 +288,21 @@ textarea:focus + label{
 		    height: 90vh;
 		  }
 	}
+#scrollToTop,
+#headerNav{
+	transition: 200ms opacity, 200ms transform;
+	// opacity: 0;
+
+}
+#scrollToTop.show,
+#headerNav.show{
+	// opacity: 1;
+	transform: scale(1);
+}
+#headerNav{
+	transform-origin: top;
+	transform: scaleY(0);
+}
+#scrollToTop{
+	transform: scale(0);
+}

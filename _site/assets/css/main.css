@@ -112,4 +112,12 @@ input:focus + label, textarea:focus + label { opacity: 1; }
 
 @media only screen and (min-width: 1280px) { .hero-height { height: 90vh; } }
 
+#scrollToTop, #headerNav { transition: 200ms opacity, 200ms transform; }
+
+#scrollToTop.show, #headerNav.show { transform: scale(1); }
+
+#headerNav { transform-origin: top; transform: scaleY(0); }
+
+#scrollToTop { transform: scale(0); }
+
 /*# sourceMappingURL=main.css.map */
