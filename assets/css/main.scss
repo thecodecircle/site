@@ -1,9 +1,9 @@
 ---
 ---
-//
-// @import "tailwindcss/base";
-// @import "tailwindcss/components";
-// @import "tailwindcss/utilities";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 @import "main";
 
 
@@ -279,7 +279,6 @@ textarea:focus + label{
   }
 	.subject{
 		height: 100px;
-		// vertical-align: top;
 	}
 
 	.hero-height{
@@ -291,12 +290,9 @@ textarea:focus + label{
 #scrollToTop,
 #headerNav{
 	transition: 200ms opacity, 200ms transform;
-	// opacity: 0;
-
 }
 #scrollToTop.show,
 #headerNav.show{
-	// opacity: 1;
 	transform: scale(1);
 }
 #headerNav{
