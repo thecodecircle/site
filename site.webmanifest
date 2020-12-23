@@ -3,13 +3,13 @@
     "short_name": "\u05d4\u05e7\u05d5\u05d3 \u05d4\u05e9\u05d5\u05de\u05e8\u05d9",
     "icons": [
         {
-            "src": "<%= asset_path 'favicon/android-chrome-192x192.png' %>",
+            "src": "/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "<%= asset_path 'favicon/android-chrome-256x256.png' %>",
-            "sizes": "256x256",
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],

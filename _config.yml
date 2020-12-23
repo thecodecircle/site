@@ -4,7 +4,5 @@ title: "הקוד השומרי" # the name of your site, e.g. ACME Corp.
 description: "כשחינוך וטכנולוגיה נפגשים" # the name of your site, e.g. ACME Corp.
 
 
-# plugins:
-#   - jekyll-postcss
 
 exclude: [node_modules]

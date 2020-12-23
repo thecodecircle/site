@@ -1,17 +1,20 @@
 ---
 ---
-//
-// @import "tailwindcss/base";
-// @import "tailwindcss/components";
-// @import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 @import "main";
 
 
+@mixin desktop {
+  @media only screen and (min-width: 1280 * 1px) {
+    @content;
+  }
+}
 
 
 
 * {
   font-family: 'Rubik', sans-serif;
+	font-display: swap;
 }
 html{
   scroll-behavior: smooth;
@@ -227,7 +230,8 @@ label{
   top: -10%;
   transition: opacity 200ms;
 }
-input:focus + label, input:invalid + label {
+input:focus + label,
+textarea:focus + label{
   opacity: 1;
 }
 	.gradient{
@@ -271,3 +275,28 @@ input:focus + label, input:invalid + label {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
   }
+	.subject{
+		height: 100px;
+	}
+
+	.hero-height{
+			height: 100vh;
+			@include desktop {
+		    height: 90vh;
+		  }
+	}
+#scrollToTop,
+#headerNav{
+	transition: 200ms opacity, 200ms transform;
+}
+#scrollToTop.show,
+#headerNav.show{
+	transform: scale(1);
+}
+#headerNav{
+	transform-origin: top;
+	transform: scaleY(0);
+}
+#scrollToTop{
+	transform: scale(0);
+}

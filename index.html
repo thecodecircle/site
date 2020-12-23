@@ -15,13 +15,13 @@ title: "הקוד השומרי"
   <!-- אנחנו מאמינים -->
   <div class="leading-normal tracking-normal text-white gradient">
     <!--Hero-->
-    <div id="hero" class="md:pt-16 md:h-auto h-screen" style="height: 968.625px;">
+    <div id="hero" class="md:pt-16 md:h-autoa hero-height ah-screen flex items-center">
 
     	<div class="container md:h-auto h-full px-10 mx-auto flex flex-wrap flex-col md:flex-row items-center">
     		<!--Right Col-->
     		<div class="flex flex-1 flex-col w-full md:w-2/5 justify-center  md:items-start text-center md:text-right">
           <div class="mb-1">
-            <img class="mb-2 md:h-8 h-5" src="/assets/img/very-white-logo.svg">
+            <img class="mb-2 md:h-8 h-5" src="/assets/img/very-white-logo.svg" alt="our logo">
             <h1 class="w-full md:h-auto ah-1/3 text-3xl md:text-5xl font-bold text-right tracking-wide">כשחינוך וטכנולוגיה נפגשים</h1>
           </div>
     			<!-- <h1 class="my-4 text-5xl font-bold leading-tight">הקוד השומרי</h1> -->
@@ -69,9 +69,8 @@ title: "הקוד השומרי"
   	<div class="modal-open w-full self-center" id="modal-open2">
   	<h1 class="text-5xl text-center">
   		<div class="trix-content">
-  מי אנחנו
-</div>
-
+			  מי אנחנו
+			</div>
   	</h1>
   	</div>
   </div>
@@ -96,7 +95,7 @@ title: "הקוד השומרי"
   <!-- אנחנו אנשי חינוך -->
   <div class="lg:flex w-full">
     <div class="lg:flex-shrink-0 lg:w-1/2">
-      <img class="md:rounded-lg shadow-2xl  lg:h-full w-full object-cover" src="/assets/img/hands.webp">
+      <img class="md:rounded-lg shadow-2xl  lg:h-full w-full object-cover" src="/assets/img/hands.webp"  alt="hands together">
     </div>
   <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
         <div class="modal-open md:w-full bg-transparent border-white border-4  text-white flex items-center w-3/4 shadow-2xl rounded-lg p-5" id="modal-open3">
@@ -110,7 +109,10 @@ title: "הקוד השומרי"
 
 
   <!-- העבודה שלנו -->
-  <div class="lg:flex  w-full ">
+  <div class="lg:flex  w-full lg:flex-row-reverse">
+		<div class="lg:flex-shrink-0 lg:w-1/2">
+			<img class="rounded-lg shadow-2xl h-full w-full object-cover" src="/assets/img/field.webp" alt="a girl in a youth movement building">
+		</div>
     <div class="lg:w-1/2 self-center">
       <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
         <div class="modal-open md:w-full bg-transparent border-white border-4  text-white flex items-center w-3/4 shadow-2xl rounded-lg p-5" id="modal-open4">
@@ -120,9 +122,6 @@ title: "הקוד השומרי"
         </div>
         </div>
       </div>
-    </div>
-    <div class="lg:flex-shrink-0 lg:w-1/2">
-      <img class="rounded-lg shadow-2xl h-full w-full object-cover" src="/assets/img/field.webp">
     </div>
   </div>
 
@@ -177,7 +176,7 @@ title: "הקוד השומרי"
   <!-- אנחנו אנשי חינוך -->
   <div class="lg:flex w-full">
     <div class="lg:flex-shrink-0 lg:w-1/2">
-  		<img class="md:rounded-lg shadow-2xl  lg:h-full w-full object-cover" src="/assets/img/meeting.webp">
+  		<img class="md:rounded-lg shadow-2xl  lg:h-full w-full object-cover" src="/assets/img/meeting.webp" alt="a meeting">
     </div>
   <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
         <div class="modal-open md:w-full border-white border-4  text-white flex items-center w-3/4 shadow-2xl rounded-lg p-5" id="modal-open6">
@@ -193,7 +192,7 @@ title: "הקוד השומרי"
   <!-- העבודה שלנו -->
   <div class="lg:flex  w-full ">
     <div class="lg:flex-shrink-0 lg:w-1/2 block md:hidden">
-  		<img class="rounded-lg shadow-2xl h-full w-full object-cover" src="/assets/img/mate_mobile.jpg">
+  		<img class="rounded-lg shadow-2xl h-full w-full object-cover" src="/assets/img/mate_mobile.jpg" alt="image of Mate mobile interface">
     </div>
     <div class="lg:w-1/2 self-center">
       <div class="lg:mx-8 self-center h-32rem flex items-center justify-center">
@@ -207,7 +206,7 @@ title: "הקוד השומרי"
       </div>
     </div>
     <div class="lg:flex-shrink-0 lg:w-1/2 hidden md:block">
-  		<img class="rounded-lg shadow-2xl h-full w-full object-cover" src="/assets/img/mate_desk.jpg">
+  		<img class="rounded-lg shadow-2xl h-full w-full object-cover" src="/assets/img/mate_desk.jpg" alt="image of Mate desktop interface">
     </div>
   </div>
 
@@ -303,7 +302,7 @@ title: "הקוד השומרי"
 
   <div class="md:mx-32">
 
-  	<div class="lg:grid col-1 md:col-2 flex flex-col items-center w-full ">
+  	<div class="lg:grid col-1 md:grid-cols-2 gap-0.5 flex flex-col items-center w-full justify-items-center">
   		<div class="md:mb-0 mb-10 contact-form bg-white shadow-2xl m-auto min-width-300 w-4/5 md:w-2/3 rounded-lg p-16">
   			<div id="after-submit" class="hidden text-white text-2xl border-2 w-full m border-white rounded-lg p-6">
   				קיבלנו את ההודעה,
@@ -311,7 +310,7 @@ title: "הקוד השומרי"
   			</div>
 				<script type="text/javascript">var submitted=false;</script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-onload="if(submitted) {alert('yes')}"></iframe>
+onload="if(submitted) {alert('קיבלנו את ההודעה שלך! נחזור אליך')}"></iframe>
   		<form class="simple_form new_quiz"
 						id="form"
 						action="https://docs.google.com/forms/d/e/1FAIpQLSevChCS7dHyNKmsAblpmgUS8EgpiGElU-AeO68oFmfKIBv9-Q/formResponse"
@@ -320,24 +319,24 @@ onload="if(submitted) {alert('yes')}"></iframe>
 						method="post">
 
   <h1 class="font-bold text-xl mb-2 h-full"></h1>
-    <div class="mb-5">
-      <input placeholder="מה שמך?" class="block contact-input" required="required" type="text" name="entry.877023693" id="quiz_full_name">
-			<label for="">שם</label>
+    <div class="mb-5 relative">
+      <input id="name" placeholder="מה שמך?" class="block contact-input" required="required" type="text" name="entry.877023693">
+			<label for="name">שם</label>
     </div>
 
-    <div class="mb-5">
-      <input placeholder="מה הטלפון שלך?" class="block contact-input" type="tel" name="entry.1109802569" id="quiz_phone">
-			<label for="">טלפון</label>
+    <div class="mb-5 relative">
+      <input id="phone" placeholder="מה הטלפון שלך?" class="block contact-input" type="tel" pattern="\d*"  title="חייב להיות מספר"  name="entry.1109802569">
+			<label for="phone">טלפון</label>
     </div>
 
-    <div class="mb-5">
-      <input placeholder="מה המייל שלך?" class="block contact-input" required="required" type="email" name="entry.2031525116" id="quiz_email">
-			<label for="">מייל</label>
+    <div class="mb-5 relative">
+      <input id="email" placeholder="מה המייל שלך?" class="block contact-input" required="required" type="email"  name="entry.2031525116">
+			<label for="email">מייל</label>
     </div>
 
-    <div class="mb-5">
-      <input placeholder="מה תרצה/י לומר לנו?" class="block contact-input" type="text" name="entry.102170778" id="quiz_notes">
-			<label for="">הודעה</label>
+    <div class="mb-5 relative">
+      <textarea id="message" placeholder="מה תרצה/י לומר לנו?" class="block contact-input subject"  name="entry.102170778"></textarea>
+			<label for="message">הודעה</label>
     </div>
 
     <div class="form-actions">
@@ -348,14 +347,14 @@ onload="if(submitted) {alert('yes')}"></iframe>
   		<!-- פרטי קשר -->
   		<div class="text-2xl text-center shadow-2xl rounded-lg mx-32 bg-white p-6">
         <div class="">
-          <a href="mailto:codecircle13@gmail.com">codecircle13@gmail.com</a>
+          <a href="mailto:codecircle13@gmail.com" aria-label="email us">codecircle13@gmail.com</a>
         </div>
   			<div class="flex justify-center mt-4">
-  				<a href="https://www.facebook.com/%D7%94%D7%A7%D7%95%D7%93-%D7%94%D7%A9%D7%95%D7%9E%D7%A8%D7%99-109072317196522">
-  				      <img class="h-12" src="/assets/img/facebook_circle.png">
+  				<a href="https://www.facebook.com/%D7%94%D7%A7%D7%95%D7%93-%D7%94%D7%A9%D7%95%D7%9E%D7%A8%D7%99-109072317196522" aria-label="go to our facebook">
+  				      <img class="h-12" src="/assets/img/facebook_circle.webp" alt="logo of facebook">
           </a>
-          <a href="https://www.instagram.com/code_circle/">
-            				<img class="h-12 mr-5" src="/assets/img/Instagram_logo.svg.webp">
+          <a href="https://www.instagram.com/code_circle/" aria-label="go to our instagram">
+            				<img class="h-12 mr-5" src="/assets/img/instagram_logo.webp" alt="logo of instagram">
           </a>  			</div>
   		</div>
   	</div>
@@ -366,17 +365,37 @@ onload="if(submitted) {alert('yes')}"></iframe>
 
 
 
-<a href="#main">
-	<img class="scrollToTop hidden fixed bottom-0 pb-1 pr-1 md:pr-2 md:pb-2 md:h-12 md:w-12 h-10 w-10" src="/assets/img/scroll2.svg" width="50" height="50" style="display: none;">
+<a href="#main" aria-label="scroll to top">
+	<img id="scrollToTop" class="  fixed bottom-0 pb-1 pr-1 md:pr-2 md:pb-2 md:h-12 md:w-12 h-10 w-10" src="/assets/img/scroll2.svg" width="50" height="50" alt="click to scroll to top of page">
 </a>
     </main>
-    <script>
-    $( document ).ready(function() {
-      var svgHeight = $("#svg").outerHeight(true);
-      var viewHeight = $( window ).height();
-      $("#hero").height(viewHeight - svgHeight)
 
-    });
+<script type="text/javascript">
+	const header = document.querySelector("#headerNav")
+	const scroll_top = document.querySelector("#scrollToTop")
+	const menu_btn = document.querySelector("#menu-btn")
+	const menu = document.querySelector("#menu")
+	if (window.scrollY > 100) {
+		header.classList.add("show")
+		scroll_top.classList.add("show")
+	}
+	else{
+		header.classList.remove("show")
+		scroll_top.classList.remove("show")
+	}
+	document.addEventListener("scroll", () => {
+		if (window.scrollY > 100) {
+			header.classList.add("show")
+			scroll_top.classList.add("show")
+		}
+		else{
+			header.classList.remove("show")
+			scroll_top.classList.remove("show")
+		}
+	});
 
+	menu_btn.addEventListener("click", () => {
+		menu.classList.toggle('hidden')
+	})
 
-    </script>
+</script>
